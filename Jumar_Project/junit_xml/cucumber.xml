@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="41.442713">
+<testcase classname="Customer journey" name="Verify that a user can register and find a dress" time="41.442713">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at stepDefinition.CreateAccountStepDefinition.ensure_that_the_dress_is_still_in_the_cart(CreateAccountStepDefinition.java:174)&#13;&#10;&#9;at ✽.And ensure that the dress is still in the cart.(C:/Dev2/Jumar_project/src/main/java/Features/createAccount.feature:20)&#13;&#10;"><![CDATA[Given that user has navigated to the web application........................passed
+And user has clicked on the Sign in link....................................passed
+And enters email address in the create account section......................passed
+And clicks on 'Create an Account' button....................................passed
+And user successfully fills out the details form............................passed
+When user clicks on the 'Register' button...................................passed
+Then user's account would be created successfully...........................passed
+And user is able to log in with valid "hive91@day.com" and "Autumn2014!"....passed
+And find the most expensive dress...........................................passed
+And add it to the cart......................................................passed
+And logs out successfully...................................................passed
+And user is able to log back in successfully with valid "hive91@day.com" and "Autumn2014!".passed
+And ensure that the dress is still in the cart..............................failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at stepDefinition.CreateAccountStepDefinition.ensure_that_the_dress_is_still_in_the_cart(CreateAccountStepDefinition.java:174)
+	at ✽.And ensure that the dress is still in the cart.(C:/Dev2/Jumar_project/src/main/java/Features/createAccount.feature:20)
+]]></failure>
+</testcase>
+</testsuite>

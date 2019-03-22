@@ -1,0 +1,207 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Verify that a user can register and find a dress",
+        "description": "",
+        "id": "customer-journey;verify-that-a-user-can-register-and-find-a-dress;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9695147400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "that user has navigated to the web application",
+            "match": {
+              "location": "CreateAccountStepDefinition.that_user_has_navigated_to_the_web_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2140682000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user has clicked on the Sign in link",
+            "match": {
+              "location": "CreateAccountStepDefinition.user_has_clicked_on_the_Sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138188200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters email address in the create account section",
+            "match": {
+              "location": "CreateAccountStepDefinition.enters_email_address_in_the_create_account_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153022900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks on \u0027Create an Account\u0027 button",
+            "match": {
+              "location": "CreateAccountStepDefinition.clicks_on_Create_an_Account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5447722900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user successfully fills out the details form",
+            "match": {
+              "location": "CreateAccountStepDefinition.user_successfully_fills_out_the_details_form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2054171600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on the \u0027Register\u0027 button",
+            "match": {
+              "location": "CreateAccountStepDefinition.user_clicks_on_the_Register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61089100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user\u0027s account would be created successfully",
+            "match": {
+              "location": "CreateAccountStepDefinition.user_s_account_would_be_created_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5900572000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is able to log in with valid \"hive91@day.com\" and \"Autumn2014!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hive91@day.com",
+                  "offset": 35
+                },
+                {
+                  "val": "Autumn2014!",
+                  "offset": 56
+                }
+              ],
+              "location": "CreateAccountStepDefinition.user_is_able_to_log_in_with_valid_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2516179900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "find the most expensive dress",
+            "match": {
+              "location": "CreateAccountStepDefinition.find_the_most_expensive_dress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7009620200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "add it to the cart",
+            "match": {
+              "location": "CreateAccountStepDefinition.add_it_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2520200300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "logs out successfully",
+            "match": {
+              "location": "CreateAccountStepDefinition.logs_out_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3767104100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is able to log back in successfully with valid \"hive91@day.com\" and \"Autumn2014!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hive91@day.com",
+                  "offset": 53
+                },
+                {
+                  "val": "Autumn2014!",
+                  "offset": 74
+                }
+              ],
+              "location": "CreateAccountStepDefinition.user_is_able_to_log_back_in_successfully_with_valid_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39012200,
+              "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:31)\r\n\tat stepDefinition.CreateAccountStepDefinition.ensure_that_the_dress_is_still_in_the_cart(CreateAccountStepDefinition.java:174)\r\n\tat ✽.And ensure that the dress is still in the cart.(C:/Dev2/Jumar_project/src/main/java/Features/createAccount.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "ensure that the dress is still in the cart.",
+            "match": {
+              "location": "CreateAccountStepDefinition.ensure_that_the_dress_is_still_in_the_cart()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Customer journey",
+    "description": " This feature will create a new account and register a new user and find the most expensive dress",
+    "id": "customer-journey",
+    "keyword": "Feature",
+    "uri": "C:/Dev2/Jumar_project/src/main/java/Features/createAccount.feature"
+  }
+]
